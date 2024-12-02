@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2024-12-01" view-index="0" gantt-divider-location="301" resource-divider-location="300" version="3.3.3312" locale="en_US">
+    <description/>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Name" width="150" order="0"/>
+        <field id="tpd4" name="Begin date" width="75" order="1"/>
+        <field id="tpd5" name="End date" width="75" order="2"/>
+        <field id="tpd15" name="Notes" width="20" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <timeline><![CDATA[3,9,8,6,7,2,0,10,4,1,5]]></timeline>
+        <option id="color.recent"><![CDATA[#cccccc #ffffcc #ccffcc #ffcccc #ccccff]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="209" order="0"/>
+        <field id="1" name="Default role" width="85" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="2c755874203c4fa9aba3f681cefdc590" name="C++ Basics erlernen" color="#ccccff" meeting="false" start="2024-12-18" duration="11" complete="0" priority="4" expand="true">
+            <notes><![CDATA[Siehe YouTube Video auf GitLab]]></notes>
+        </task>
+        <task id="1" uid="4ad19e4b8ded4ba9932df4c013235636" name="C++ Intermediate erlernen" color="#ccccff" meeting="false" start="2025-01-02" duration="21" complete="0" priority="4" expand="true"/>
+        <task id="2" uid="e54b46dcf59b4f77bb2cccfaebc3bb78" name="C++ für Robotik erlernen" color="#ffcccc" meeting="false" start="2025-01-31" duration="31" complete="0" expand="true"/>
+        <task id="3" uid="3360461d54c048a98fa849426172ac1d" name="Projektstart und Grundlegende Sensorik" color="#ffffcc" meeting="false" start="2025-03-17" duration="6" complete="0" expand="true">
+            <notes><![CDATA[Ziele:
+- Verstehen und Testen der verfügbaren Sensoren (z. B. Ultraschall, Kamera).
+- Einrichten der Entwicklungsumgebung (Raspberry Pi, C++).
+Aufgaben:
+- Installation notwendiger Bibliotheken (z. B. WiringPi, OpenCV).
+- Schreiben kleiner Testprogramme zur Datenausgabe der Sensoren.
+- Dokumentation der Sensordaten (z. B. Reichweite von Ultraschallsensoren).
+Ergebnis: Sensoren liefern korrekte Daten und sind einsatzbereit.]]></notes>
+        </task>
+        <task id="4" uid="2f95441d7d924466911ab3c3db29eee4" name="Navigation" color="#ccffcc" meeting="false" start="2025-03-25" duration="16" complete="0" expand="true">
+            <notes><![CDATA[Ziele:	
+- Implementierung grundlegender Bewegungsbefehle (vorwärts, rückwärts, drehen).
+- Testen der Motorsteuerung (PWM, Geschwindigkeit).
+Aufgaben:
+- Kalibrieren der Motoren.
+- Entwicklung eines Programms zur Bewegung entlang vorbestimmter Pfade.
+- Testen der Navigationsfähigkeit ohne Hindernisse.
+Ergebnis: Roboter kann sich zuverlässig in einer vorgegebenen Umgebung bewegen.]]></notes>
+        </task>
+        <task id="5" uid="31f0ba520cac419a81f004da3868c9de" name="Hinderniserkennung und -vermeidung" color="#ccffcc" meeting="false" start="2025-04-16" duration="16" complete="0" expand="true">
+            <notes><![CDATA[Ziele:
+- Integration und Test von Hindernissensoren (Ultraschall/Infrarot).
+- Entwicklung und Implementierung eines Hindernisvermeidungsalgorithmus.
+Aufgaben:
+- Kalibrierung der Sensoren.
+- Echtzeit-Verarbeitung von Sensordaten zur Bewegungskorrektur.
+Ergebnis: Hindernisse werden erkannt und vermieden.]]></notes>
+        </task>
+        <task id="6" uid="5dbf43d5e0cc4f6484caec8953a8e2ff" name="Sensorik und Umgebungserkennung" color="#ccffcc" meeting="false" start="2025-05-08" duration="16" complete="0" expand="true">
+            <notes><![CDATA[Ziele:
+- Erweiterung der Sensorik für komplexere Umgebungserkennung.
+- Datenfusion von mehreren Sensoren (z. B. Kamera + Ultraschall).
+Aufgaben:
+- Verarbeitung von Sensordaten zur Entscheidungsfindung.
+- Implementierung eines Systems zur Hindernisserkennung und Zustandsbestimmung.
+Ergebnis: Roboter kann Wände, Personen und andere Hindernisse erkennen.]]></notes>
+        </task>
+        <task id="7" uid="3871f3c62f614de393606376a2c38d5a" name="Mechanischer Arm" color="#ccffcc" meeting="false" start="2025-05-30" duration="16" complete="0" expand="true">
+            <notes><![CDATA[Ziele:
+- Integration des Greifarms.
+- Entwicklung der Greiffunktion für das Aufnehmen und Ablegen von Objekten.
+Aufgaben:
+- Kalibrierung und Feinjustierung des Arms.
+- Synchronisation der Greiffunktion mit der Navigation.
+Ergebnis: Greifarm ist vollständig funktional.]]></notes>
+        </task>
+        <task id="8" uid="022ef7fd50ca4d7c8d295850dc344815" name="KI und ObjekterkennungEndtests" color="#ccffcc" meeting="false" start="2025-06-23" duration="15" complete="0" expand="true">
+            <notes><![CDATA[Ziele:
+- Integration der Kamera und Entwicklung einer Objekterkennungssoftware.
+- Nutzung von Computer Vision (OpenCV) zur Identifikation von Objekten.
+Aufgaben:
+- Installation und Konfiguration von OpenCV.
+- Entwicklung eines Modells zur Erkennung eines gesuchten Objektes und unterscheiden von anderen Objekten (in meinem Fall 3 andere Objekte).
+- Testen der Objekterkennung in realen Bedingungen.
+Ergebnis: Roboter erkennt Objekte und kann sie zur vorgegebenen Zone transportieren.]]></notes>
+        </task>
+        <task id="9" uid="9a233b8b0fab46f1be966d3c316f1e93" name="Systemintegration und Tests" color="#ffffcc" meeting="false" start="2025-07-14" duration="10" complete="0" expand="true">
+            <notes><![CDATA[Ziele:
+- Zusammenführung aller entwickelten Module (falls noch nicht gemacht).
+- Durchführung umfassender Funktionstests.
+Aufgaben:
+- Integration von Navigation, Sensorik, Objekterkennung und Greifarm.
+- Testen unter verschiedenen Szenarien und Optimierung.
+Ergebnis: Vollständig funktionierender Roboter (also Must-Haves erfüllt + OpenCV für Objekterkennung).]]></notes>
+        </task>
+        <task id="10" uid="3bb58f3ac16448fc8d082a5528117026" name="Endspurt" color="#cccccc" meeting="false" start="2025-07-28" duration="48" complete="0" expand="true">
+            <notes><![CDATA[Ziele:
+- Implementierung von Nice-to-Have-Features (z. B. GUI, um in der Anwendung neue Umgebungen einzustellen für das autonome Fahrzeug oder auch andere Objekte die er suchen soll).
+- Endgültige Dokumentation und Vorbereitung der Präsentation.
+Aufgaben:
+- Entwicklung einer Benutzeroberfläche (optional).
+- Verbesserungen & Tests.
+Ergebnis: Projekt ist fertig für die Präsentation.]]></notes>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
