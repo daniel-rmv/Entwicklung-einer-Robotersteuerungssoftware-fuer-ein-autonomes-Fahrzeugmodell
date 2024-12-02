@@ -1,0 +1,9 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S "/Users/danielwuermli/Library/Mobile Documents/com~apple~CloudDocs/Documents/Computer Science /CLion /Entwicklung einer Robotersteuerungssoftware für ein autonomes Fahrzeugmodell" -B "/Users/danielwuermli/Library/Mobile Documents/com~apple~CloudDocs/Documents/Computer Science /CLion /Entwicklung einer Robotersteuerungssoftware für ein autonomes Fahrzeugmodell/cmake-build-debug"
+CMake Error at CMakeLists.txt:6 (add_executable):
+  The target name
+  "Entwicklung_einer_Robotersteuerungssoftware_für_ein_autonomes_Fahrzeugmodell"
+  is reserved or not valid for certain CMake features, such as generator
+  expressions, and may result in undefined behavior.
+
+
+-- Configuring incomplete, errors occurred!
