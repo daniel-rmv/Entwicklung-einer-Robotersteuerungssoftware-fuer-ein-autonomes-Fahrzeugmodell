@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2024-12-08" view-index="0" gantt-divider-location="301" resource-divider-location="300" version="3.3.3312" locale="en_US">
+    <description/>
+    <view zooming-state="default:4" id="gantt-chart">
+        <field id="tpd3" name="Name" width="150" order="0"/>
+        <field id="tpd4" name="Begin date" width="75" order="1"/>
+        <field id="tpd5" name="End date" width="75" order="2"/>
+        <field id="tpd15" name="Notes" width="20" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <timeline><![CDATA[21,3,2,12,13,17,0,18,16,4,1]]></timeline>
+        <option id="color.recent"><![CDATA[#cccc00 #ffccff #ccccff #ccffcc #ffffcc #ffff00 #ccffff]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="209" order="0"/>
+        <field id="1" name="Default role" width="85" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="e3141bae5b8f4396b526a1f9cbe44fa9" name="Start" color="#ccccff" meeting="false" start="2024-12-20" duration="1" complete="0" expand="true">
+            <notes><![CDATA[Beginn meiner Maturaarbeit]]></notes>
+            <depend id="1" type="2" difference="0" hardness="Strong"/>
+            <depend id="17" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="1" uid="fe35be052ff8478d81c902af4c58a013" name="Analyse" color="#ccccff" meeting="false" start="2024-12-23" duration="3" complete="0" expand="true">
+            <notes><![CDATA[Use-Cases definieren und YouTube Turtorials suchen]]></notes>
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="2" uid="c47d18f2d88042aa9073e5e873b63ff3" name="Planung" color="#ccccff" meeting="false" start="2024-12-26" duration="2" complete="0" expand="true">
+            <notes><![CDATA[Gantt-Diagramm erstellen mit Meilensteinen etc.]]></notes>
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="3" uid="e55c5ff3d20843419d2a85adeb09e1f0" name="Design" color="#ccccff" meeting="false" start="2024-12-30" duration="5" complete="0" expand="true">
+            <notes><![CDATA[mit dem Klassendiagramm arbeiten]]></notes>
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="21" uid="911fbdc3cf6b4638b7deb81037a0d28b" name="Vorbereitung abgeschlossen" color="#cccc00" meeting="true" start="2025-01-06" duration="0" complete="0" expand="true">
+            <notes><![CDATA[fertig mit den Vorbereitungen]]></notes>
+        </task>
+        <task id="4" uid="6dc40bd4a90145c4a8ec2fcd8f475ce4" name="Implementation" color="#ccccff" meeting="false" start="2025-01-06" duration="115" complete="0" priority="4" expand="true">
+            <notes><![CDATA[erlernen von C++ und coden meines Projekts]]></notes>
+            <depend id="12" type="2" difference="0" hardness="Strong"/>
+            <task id="5" uid="0e32383a81fd465b8675e76c4d5cee9a" name="Grundlegende Navigation" color="#ffccff" meeting="false" start="2025-01-06" duration="15" complete="0" priority="4" expand="true">
+                <notes><![CDATA[Ziele:
+- Bewegungsabläufe (vorwärts, rückwärts, drehen) programmieren.
+- Navigation entlang vordefinierter Pfade implementieren.
+Ergebnis: Der Roboter kann sich sicher entlang von Pfaden bewegen.
+]]></notes>
+                <depend id="6" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="6" uid="7e16ad5e31c7414f8f62cf712660ea7c" name="Hindernisserkennung und -vermeidung" color="#ffccff" meeting="false" start="2025-01-27" duration="15" complete="0" priority="4" expand="true">
+                <notes><![CDATA[Ziele:
+- Integration von Sensoren zur Hinderniserkennung.
+- Entwicklung von Algorithmen zur Hindernisvermeidung.
+Ergebnis: Autonome Navigation mit Hindernisvermeidung.]]></notes>
+                <depend id="7" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="7" uid="8fc16e1edc7743e9b5cc063d869a4d15" name="Greifarmsteuerung" color="#ffccff" meeting="false" start="2025-02-17" duration="20" complete="0" priority="4" expand="false">
+                <notes><![CDATA[Ziele:
+- Programmierung des Greifarms zum Greifen und Ablegen von Objekten.
+- Synchronisation der Greiffunktion mit der Navigation.
+Ergebnis: Der Roboter kann Objekte aufnehmen und ablegen.]]></notes>
+                <depend id="8" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="8" uid="d32ff2a7acd24537a398393e5e15ccfc" name="Objekterkennung mit OpenCV" color="#ffccff" meeting="false" start="2025-03-17" duration="25" complete="0" priority="4" expand="true">
+                <notes><![CDATA[Ziele:
+- OpenCV einrichten und trainieren, um Objekte zu erkennen.
+Ergebnis: Roboter erkennt Objekte und kann sie gezielt ansteuern.]]></notes>
+                <depend id="9" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="9" uid="95579856ccbb4e80974c6cc7a470f2c6" name="Systemintegration" color="#ffccff" meeting="false" start="2025-04-21" duration="30" complete="0" priority="4" expand="true">
+                <notes><![CDATA[Ziele:
+- Zusammenführung aller Module (Navigation, Sensorik, Greifarm, Objekterkennung).
+- Durchführung umfassender Systemtests.
+Ergebnis: Vollständig integriertes System.]]></notes>
+                <depend id="10" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="10" uid="1388fcc1bfe8433f9f3cbcd0cb16a8f7" name="Pufferzeit" color="#ffccff" meeting="false" start="2025-06-02" duration="10" complete="0" priority="2" expand="true">
+                <notes><![CDATA[Zeit um noch vorhandene Probleme zu lösen]]></notes>
+                <depend id="12" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="12" uid="abc1a1901e9d4bd8985988e8eec4a14a" name="Alpha Freigabe" color="#cccc00" meeting="true" start="2025-06-16" duration="0" complete="0" priority="2" expand="true">
+            <notes><![CDATA[Version des Roboters der bereit für die Testphase ist ]]></notes>
+            <depend id="13" type="2" difference="0" hardness="Strong"/>
+            <depend id="14" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="13" uid="64aef4a15ce24048808728a1e09d3a6b" name="Tests" color="#ccccff" meeting="false" start="2025-06-16" duration="40" complete="0" expand="true">
+            <notes><![CDATA[Testphase]]></notes>
+            <depend id="16" type="2" difference="0" hardness="Strong"/>
+            <task id="14" uid="41413de5f7254e7fb700f52d328a1ad3" name="Funktionale Tests" color="#ffccff" meeting="false" start="2025-06-16" duration="25" complete="0" expand="true">
+                <notes><![CDATA[Überprüfen, ob alle Must-Have-Funktionen korrekt umgesetzt wurden.]]></notes>
+                <depend id="15" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="15" uid="d8138d48dd8b4dd1ad837b47bc412357" name="Destruktive Tests" color="#ffccff" meeting="false" start="2025-07-21" duration="15" complete="0" expand="true">
+                <notes><![CDATA[- Verhalten des Systems bei fehlerhaften Eingaben oder Ausfällen testen.
+- Optimierung und Fehlerbehebung.]]></notes>
+                <depend id="16" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="16" uid="6368f58319114297854c749ac25d0414" name="Release Freigabe" color="#cccc00" meeting="true" start="2025-08-11" duration="0" complete="0" priority="4" expand="true">
+            <notes><![CDATA[Entgültiges Produkt]]></notes>
+            <depend id="18" type="2" difference="0" hardness="Strong"/>
+            <depend id="19" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="18" uid="e877265c02f04f59b7ba12c87660820d" name="Deployment" color="#ccccff" meeting="false" start="2025-08-11" duration="50" complete="0" priority="2" expand="true">
+            <notes><![CDATA[End-Phase]]></notes>
+            <task id="19" uid="a815dd7e89e4494987e1d1e583e673b8" name="Schriftliche Arbeit fertigstellen" color="#ffccff" meeting="false" start="2025-08-11" duration="20" complete="0" priority="4" expand="false">
+                <notes><![CDATA[- Maturaarbeit Dossier fertigstellen
+- nach Fehlern prüfen]]></notes>
+                <depend id="20" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="20" uid="f365bbce7b994f77827441e5b80eaf2e" name="Präsentation" color="#ffccff" meeting="false" start="2025-09-08" duration="30" complete="0" priority="2" expand="true">
+                <notes><![CDATA[- Präsentation vorbereiten
+- Alles Abgabe bereit machen
+- nochmals alles auffrischen eventuell]]></notes>
+            </task>
+        </task>
+        <task id="17" uid="3c1a090d209940d387dd19147e76227b" name="Technische Dokumentation" color="#ccffcc" meeting="false" start="2024-12-23" duration="165" complete="0" priority="2" expand="true">
+            <notes><![CDATA[Alles detailiert dokumentieren]]></notes>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
