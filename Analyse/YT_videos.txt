@@ -1,1 +1,7 @@
-https://youtu.be/8jLOx1hD3_o?si=6lQon3zmbQpFp5sW
+C++ Tutorial: https://youtu.be/8jLOx1hD3_o?si=6lQon3zmbQpFp5sW
+
+OOP mit C++ Tutorial: https://www.youtube.com/watch?v=wN0x9eZLix4
+
+Remote Development für Raspi auf IDE: https://www.youtube.com/watch?v=R6VJE7WfXt8&list=PLf6OEfnTo5N4PXbw85heZ1q3ypCaSMOGo
+
+C++ auf Raspi Motoren steuern: https://www.youtube.com/watch?v=yBzPn09mX48
