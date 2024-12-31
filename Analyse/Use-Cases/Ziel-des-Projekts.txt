@@ -1,1 +1,0 @@
-Das Ziel meines autonomen Fahrzeugmodells ist es, mit einer KI basierenden Objekterkennung, ein gezeigtes Objekt (von vier verschiedenen Objekten) in einer vorgegebenen Zone zu finden und es zu einem festgelegten Zielort zurückzubringen. 
