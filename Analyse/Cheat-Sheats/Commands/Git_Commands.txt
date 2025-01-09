@@ -5,11 +5,14 @@ cd /pfad/zu/deinem/projekt // Gehe zu deinem Verzeichnis
 git remote -v // Überprüfe, ob das Projekt mit einem GitLab-Repository verknüpft ist
 
 git remote add origin <URL_deines_Repositories> // Falls kein URL so einfügen und verbinden
+git remote add github <URL_deines_Repositories> // Falls kein URL so einfügen und verbinden
 
 git add . // Alle Änderungen hinzufügen
 
 git commit -m "Beschreibung der Änderungen" // Commit die Änderung
 
 git push origin <branch_name> // Synchronisiere die Änderung mit GitLab
+git push all <branch_name> // Synchronisiere die Änderung mit GitLab und GitHub
 
 git pull origin <branch_name> // Wenn Änderungen im Repository sind, aber nicht Lokal dann pull
+
