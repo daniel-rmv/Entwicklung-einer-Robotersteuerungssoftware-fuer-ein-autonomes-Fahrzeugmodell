@@ -1,0 +1,9 @@
+Evaluationen (Varianten)
+	1.	Raspberry Pi 4 vs. Raspberry Pi 5
+	•	Vorteile Raspberry Pi 4: Kostengünstiger, stabilere Treiberunterstützung.
+	•	Nachteile: Weniger Rechenleistung und Energieeffizienz.
+	•	Empfehlung: Der Raspberry Pi 4 ist ausreichend für dein Projekt, solange die Hardware und Sensoren kompatibel sind und mein Roboter unterstütz den Raspi 4 halt.
+	2.	LiDAR-Modelle
+	•	Orbbec Oradar MS200: Guter Preis-Leistungs-Verhältnis, ausreichende Reichweite.
+	•	Alternative: RPLIDAR A1/A2 (etwas kostengünstiger, jedoch weniger präzise).
+	•	Empfehlung: Orbbec Oradar bleibt erste Wahl, wenn präzisere Objekterkennung erforderlich ist.

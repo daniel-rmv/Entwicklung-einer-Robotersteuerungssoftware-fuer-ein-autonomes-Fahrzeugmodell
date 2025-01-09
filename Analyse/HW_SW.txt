@@ -1,0 +1,19 @@
+HW-Umgebung
+	•	Steuerungszentrale: Raspberry Pi 4
+	•	Greifarm: Armi Pro
+	•	Sensor: Orbbec Oradar MS200 Lidar 
+	•	HD Wide-angle Kamera
+	•	Motorsteuerung: Encoder Motor Driver
+	•	Energieversorgung: 6000mAh Lipo Batterie
+	•	Speicher: microSD-Karte SanDisk Extreme (32 GB)
+	•	Gehäuse: Hart Aluminium Gehäuse
+
+SW-Umgebung
+	•	Betriebssystem: Raspberry Pi OS (64-Bit)
+	•	Entwicklungswerkzeuge:$
+        •	VNC: Um vom Mac auf den Raspi zuzugreifen
+	•	C++ Compiler: g++ 
+	•	OpenCV: Für Bildverarbeitung und Objekterkennung.
+	•	WiringPi oder Pigpio
+	•	Weitere Software:
+	•	LiDAR-Treiber und SDK.
