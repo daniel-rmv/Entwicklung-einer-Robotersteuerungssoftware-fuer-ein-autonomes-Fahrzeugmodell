@@ -21,8 +21,8 @@ public:
         std::cout << "RobotSystem: Starte..." << std::endl;
 
         // Geradeaus & rückwärts fahren mit Feintuning für je 25 Sekunden
-        //navigationSystem.navigateForward(25000);
-        //navigationSystem.navigateBackward(25000);
+        navigationSystem.navigateForward(25000);
+        navigationSystem.navigateBackward(25000);
         navigationSystem.turnLeft(90);
 
         std::cout << "RobotSystem: Alle Aktionen abgeschlossen." << std::endl;
