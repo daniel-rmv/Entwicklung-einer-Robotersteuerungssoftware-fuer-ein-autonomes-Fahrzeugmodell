@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "RobotControlSystem",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "RobotControlSystem::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RobotControlSystem-Debug-1e4fe1c9499c1b4a2637.json",
+					"name" : "RobotControlSystem",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/danielwuermli/Documents/Documents - Daniel\u2019s MacBook Pro/ClionProjects/RobotControlSystem/cmake-build-debug",
+		"source" : "/Users/danielwuermli/Documents/Documents - Daniel\u2019s MacBook Pro/ClionProjects/RobotControlSystem"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

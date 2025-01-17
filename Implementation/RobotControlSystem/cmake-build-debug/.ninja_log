@@ -1,0 +1,6 @@
+# ninja log v6
+0	267	1736849702352836168	CMakeFiles/RobotControlSystem.dir/main.cpp.o	e625b9d3e27f785d
+268	295	1736849702620315789	RobotControlSystem	adbe3886ac01d977
+0	24	1736867154704194537	CMakeFiles/RobotControlSystem.dir/RobotSystem.cpp.o	2d76fdad98bd0bd6
+1	25	1736867154704622409	CMakeFiles/RobotControlSystem.dir/Motor.cpp.o	a7424e07e73f9882
+1	25	1736867154704409452	CMakeFiles/RobotControlSystem.dir/NavigationSystem.cpp.o	5ca2956f4b1ecc76
