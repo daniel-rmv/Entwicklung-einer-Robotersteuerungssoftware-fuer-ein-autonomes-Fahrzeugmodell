@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="Remote Development" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="Raspi (29b37832-4525-48dc-babe-1dea0c5ed478)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/danielrmv/projects/RobotControlSystem" local="$PROJECT_DIR$" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="/home/danielrmv/projects/build" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
+            <excludedPath local="true" path="/home/danielrmv/projects/RobotControlSystem/build" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-raspi" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
