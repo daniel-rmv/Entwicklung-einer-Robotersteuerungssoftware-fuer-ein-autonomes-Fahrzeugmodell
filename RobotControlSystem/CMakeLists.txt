@@ -12,6 +12,7 @@ add_executable(RobotControlSystem
         src/NavigationSystem.cpp
         src/MotorController.cpp
         src/Motor.cpp
+        src/LidarSensor.cpp
 )
 
 # Füge den Include-Ordner hinzu, damit Header-Dateien gefunden werden

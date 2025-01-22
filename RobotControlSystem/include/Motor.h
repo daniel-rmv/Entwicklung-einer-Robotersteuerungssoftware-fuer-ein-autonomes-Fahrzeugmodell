@@ -3,15 +3,21 @@
 
 #include <string>
 
+// Die Motor-Klasse repräsentiert einen einzelnen Motor
 class Motor {
 private:
     std::string id;     // Eindeutige ID des Motors
     int currentSpeed;   // Aktuelle Geschwindigkeit des Motors in PWM
 
 public:
-    Motor(const std::string& motorId); // Konstruktor
-    void setSpeed(int fd, int motorReg, int speed); // Geschwindigkeit setzen
-    int getSpeed() const; // Geschwindigkeit abfragen
+    // Konstruktor: Initialisiert den Motor mit einer ID
+    Motor(const std::string& motorId);
+
+    // Setzt die Geschwindigkeit des Motors
+    void setSpeed(int fd, int motorReg, int speed);
+
+    // Gibt die aktuelle Geschwindigkeit des Motors zurück
+    int getSpeed() const;
 };
 
-#endif
+#endif // MOTOR_H

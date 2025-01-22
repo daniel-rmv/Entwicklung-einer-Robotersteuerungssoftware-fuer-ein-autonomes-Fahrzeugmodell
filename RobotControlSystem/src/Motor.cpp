@@ -2,17 +2,21 @@
 #include <wiringPiI2C.h>
 #include <iostream>
 
-// Konstruktor
-Motor::Motor(const std::string& motorId) : id(motorId), currentSpeed(0) {}
+using namespace std;
 
-// Geschwindigkeit setzen
+// Konstruktor: Initialisiert den Motor mit einer ID und setzt die Geschwindigkeit auf 0
+Motor::Motor(const string& motorId) : id(motorId), currentSpeed(0) {}
+
+// Methode: Setzt die Geschwindigkeit des Motors
 void Motor::setSpeed(int fd, int motorReg, int speed) {
-    currentSpeed = speed;
-    wiringPiI2CWriteReg8(fd, motorReg, speed);
-    std::cout << "Motor " << id << " auf Geschwindigkeit " << speed << " gesetzt." << std::endl;
+    if (currentSpeed != speed) { // Nur, wenn die Geschwindigkeit anders ist
+        currentSpeed = speed;
+        wiringPiI2CWriteReg8(fd, motorReg, speed);
+        cout << "Motor " << id << " auf Geschwindigkeit " << speed << " gesetzt." << endl;
+    }
 }
 
-// Geschwindigkeit abfragen
+// Methode: Gibt die aktuelle Geschwindigkeit des Motors zurück
 int Motor::getSpeed() const {
     return currentSpeed;
 }

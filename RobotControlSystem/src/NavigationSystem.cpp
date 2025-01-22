@@ -2,59 +2,74 @@
 #include <iostream>
 #include <unistd.h>
 
-// Konstruktor
+using namespace std;
+
+// Konstruktor: Initialisiert das Navigationssystem mit einer Referenz auf den MotorController
 NavigationSystem::NavigationSystem(MotorController& controller) : motorController(controller) {}
 
-// Geradeaus fahren
+// Methode: Fährt den Roboter geradeaus für eine bestimmte Dauer
 void NavigationSystem::navigateForward(int durationMs) {
-    std::cout << "NavigationSystem: Starte geradeaus fahren..." << std::endl;
+    cout << "NavigationSystem: Starte geradeaus fahren..." << endl;
+
+    // Berechnung der Iterationen basierend auf der Gesamtdauer (10ms pro Iteration)
     int iterations = durationMs / 10;
+
     for (int i = 0; i < iterations; i++) {
         if (i % 2 == 0) {
-            motorController.setSpeed(-10, 10, 10, -10);
+            motorController.setSpeed(-10, 10, 10, -10); // Standardgeschwindigkeit
         } else {
-            motorController.setSpeed(-10, 10, 10, -11);
+            motorController.setSpeed(-10, 10, 10, -11); // Leichte Korrektur
         }
-        usleep(10000);
+        usleep(10000); // Warte 10ms
     }
-    motorController.stopAll();
-    std::cout << "NavigationSystem: Geradeaus fahren beendet." << std::endl;
+
+    motorController.stopAll(); // Stoppe die Motoren nach Abschluss
+    cout << "NavigationSystem: Geradeaus fahren beendet." << endl;
 }
 
-// Rückwärts fahren
+// Methode: Fährt rückwärts für eine bestimmte Dauer
 void NavigationSystem::navigateBackward(int durationMs) {
-    std::cout << "NavigationSystem: Starte rückwärts fahren..." << std::endl;
+    cout << "NavigationSystem: Starte rückwärts fahren..." << endl;
+
     int iterations = durationMs / 10;
+
     for (int i = 0; i < iterations; i++) {
         if (i % 2 == 0) {
-            motorController.setSpeed(10, -10, -10, 10);
+            motorController.setSpeed(10, -10, -10, 10); // Standardgeschwindigkeit rückwärts
         } else {
-            motorController.setSpeed(10, -10, -10, 9);
+            motorController.setSpeed(10, -10, -10, 9); // Leichte Korrektur
         }
         usleep(10000);
     }
+
     motorController.stopAll();
-    std::cout << "NavigationSystem: Rückwärts fahren beendet." << std::endl;
+    cout << "NavigationSystem: Rückwärts fahren beendet." << endl;
 }
 
-// Nach rechts drehen
+// Methode: Dreht den Roboter nach rechts um eine bestimmte Gradzahl
 void NavigationSystem::turnRight(int degrees) {
-    std::cout << "NavigationSystem: Starte rechts Drehung..." << std::endl;
-    int iterations = degrees * 29;
+    cout << "NavigationSystem: Starte rechts Drehung..." << endl;
+
+    int iterations = degrees * 29; // Beispiel: Iterationen für 1 Grad = 29
+
     for (int i = 0; i < iterations; i++) {
-        motorController.setSpeed(-10, 10, -10, 10);
+        motorController.setSpeed(-10, 10, -10, 10); // Drehgeschwindigkeit
     }
+
     motorController.stopAll();
-    std::cout << "NavigationSystem: Rechts Drehung beendet." << std::endl;
+    cout << "NavigationSystem: Rechts Drehung beendet." << endl;
 }
 
-// Nach links drehen
+// Methode: Dreht den Roboter nach links um eine bestimmte Gradzahl
 void NavigationSystem::turnLeft(int degrees) {
-    std::cout << "NavigationSystem: Starte links Drehung..." << std::endl;
+    cout << "NavigationSystem: Starte links Drehung..." << endl;
+
     int iterations = degrees * 29;
+
     for (int i = 0; i < iterations; i++) {
         motorController.setSpeed(10, -10, 10, -10);
     }
+
     motorController.stopAll();
-    std::cout << "NavigationSystem: Links Drehung beendet." << std::endl;
+    cout << "NavigationSystem: Links Drehung beendet." << endl;
 }

@@ -4,15 +4,24 @@
 #include <vector>
 #include "Motor.h"
 
+// Die MotorController-Klasse verwaltet alle Motoren und ihre Steuerung
 class MotorController {
 private:
     std::vector<Motor> motors; // Liste der Motoren
-    int fd; // I2C-Dateideskriptor
+    int fd; // I2C-Dateideskriptor zur Kommunikation mit dem Motor Driver
 
 public:
-    MotorController(); // Konstruktor
-    void setSpeed(int speed1, int speed2, int speed3, int speed4); // Geschwindigkeit setzen
-    void stopAll(); // Alle Motoren stoppen
+    // Konstruktor: Erstellt Motor-Objekte (Verbindung wird später hergestellt)
+    MotorController();
+
+    // Initialisiert die Verbindung zum Motor Driver
+    void initializeMotors();
+
+    // Setzt die Geschwindigkeit für alle Motoren
+    void setSpeed(int speed1, int speed2, int speed3, int speed4);
+
+    // Stoppt alle Motoren
+    void stopAll();
 };
 
-#endif
+#endif // MOTORCONTROLLER_H
