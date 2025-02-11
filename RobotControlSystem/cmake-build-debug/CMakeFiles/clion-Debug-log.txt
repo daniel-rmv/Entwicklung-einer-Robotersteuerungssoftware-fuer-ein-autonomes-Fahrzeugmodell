@@ -1,3 +1,0 @@
-/usr/local/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S /home/danielrmv/projects/tmp/tmp.gBZp92jzhW -B /home/danielrmv/projects/tmp/tmp.gBZp92jzhW/cmake-build-debug
-CMake Error: The source directory "/home/danielrmv/projects/tmp/tmp.gBZp92jzhW" does not appear to contain CMakeLists.txt.
-Specify --help for usage, or press the help button on the CMake GUI.

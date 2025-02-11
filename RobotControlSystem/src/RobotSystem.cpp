@@ -23,9 +23,9 @@ void RobotSystem::init() {
 // Startet das Robotersystem
 void RobotSystem::start() {
     cout << "RobotSystem: Starte Aktionen..." << endl;
-    navigationSystem.navigateForward(5000); // 5 Sekunden geradeaus fahren
-    navigationSystem.turnRight(90); // 90 Grad nach rechts drehen
-    navigationSystem.navigateBackward(5000); // 5 Sekunden rückwärts fahren
+    navigationSystem.navigateForward(10000); // 10 Sekunden geradeaus fahren
+    //navigationSystem.turnRight(90); // 90 Grad nach rechts drehen
+    //navigationSystem.navigateBackward(10000); // 10 Sekunden rückwärts fahren
     cout << "RobotSystem: Aktionen abgeschlossen." << endl;
 }
 

@@ -1,12 +1,12 @@
-cmake_minimum_required(VERSION 3.30)
+cmake_minimum_required(VERSION 3.20)
 project(RobotControlSystem)
 
 # C++23 Standard verwenden
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Füge alle Quell-Dateien hinzu
-add_executable(RobotControlSystem
+# Alle Quell-Dateien
+set(SOURCES
         src/main.cpp
         src/RobotSystem.cpp
         src/NavigationSystem.cpp
@@ -15,9 +15,16 @@ add_executable(RobotControlSystem
         src/LidarSensor.cpp
 )
 
-# Füge den Include-Ordner hinzu, damit Header-Dateien gefunden werden
+# Executable erstellen
+add_executable(RobotControlSystem ${SOURCES})
+
+# Include-Verzeichnisse hinzufügen
 target_include_directories(RobotControlSystem PRIVATE ${CMAKE_SOURCE_DIR}/include)
 
-# Suche und verlinke die WiringPi-Bibliothek
+# Suche WiringPi und verlinke es
 find_library(WIRINGPI_LIB wiringPi REQUIRED)
-target_link_libraries(RobotControlSystem PRIVATE ${WIRINGPI_LIB})
+if (WIRINGPI_LIB)
+    target_link_libraries(RobotControlSystem PRIVATE ${WIRINGPI_LIB})
+else()
+    message(FATAL_ERROR "WiringPi-Bibliothek nicht gefunden! Bitte installieren!")
+endif()

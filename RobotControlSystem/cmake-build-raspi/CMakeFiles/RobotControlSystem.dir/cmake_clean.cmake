@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/RobotControlSystem.dir/src/LidarSensor.cpp.o"
+  "CMakeFiles/RobotControlSystem.dir/src/LidarSensor.cpp.o.d"
   "CMakeFiles/RobotControlSystem.dir/src/Motor.cpp.o"
   "CMakeFiles/RobotControlSystem.dir/src/Motor.cpp.o.d"
   "CMakeFiles/RobotControlSystem.dir/src/MotorController.cpp.o"

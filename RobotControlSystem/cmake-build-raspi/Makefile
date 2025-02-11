@@ -129,6 +129,30 @@ RobotControlSystem/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RobotControlSystem.dir/build.make CMakeFiles/RobotControlSystem.dir/build
 .PHONY : RobotControlSystem/fast
 
+src/LidarSensor.o: src/LidarSensor.cpp.o
+.PHONY : src/LidarSensor.o
+
+# target to build an object file
+src/LidarSensor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RobotControlSystem.dir/build.make CMakeFiles/RobotControlSystem.dir/src/LidarSensor.cpp.o
+.PHONY : src/LidarSensor.cpp.o
+
+src/LidarSensor.i: src/LidarSensor.cpp.i
+.PHONY : src/LidarSensor.i
+
+# target to preprocess a source file
+src/LidarSensor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RobotControlSystem.dir/build.make CMakeFiles/RobotControlSystem.dir/src/LidarSensor.cpp.i
+.PHONY : src/LidarSensor.cpp.i
+
+src/LidarSensor.s: src/LidarSensor.cpp.s
+.PHONY : src/LidarSensor.s
+
+# target to generate assembly for a file
+src/LidarSensor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RobotControlSystem.dir/build.make CMakeFiles/RobotControlSystem.dir/src/LidarSensor.cpp.s
+.PHONY : src/LidarSensor.cpp.s
+
 src/Motor.o: src/Motor.cpp.o
 .PHONY : src/Motor.o
 
@@ -258,6 +282,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... RobotControlSystem"
+	@echo "... src/LidarSensor.o"
+	@echo "... src/LidarSensor.i"
+	@echo "... src/LidarSensor.s"
 	@echo "... src/Motor.o"
 	@echo "... src/Motor.i"
 	@echo "... src/Motor.s"

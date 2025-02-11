@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/danielrmv/home/danielrmv/projects/RobotControlSystem/src/LidarSensor.cpp" "CMakeFiles/RobotControlSystem.dir/src/LidarSensor.cpp.o" "gcc" "CMakeFiles/RobotControlSystem.dir/src/LidarSensor.cpp.o.d"
   "/home/danielrmv/home/danielrmv/projects/RobotControlSystem/src/Motor.cpp" "CMakeFiles/RobotControlSystem.dir/src/Motor.cpp.o" "gcc" "CMakeFiles/RobotControlSystem.dir/src/Motor.cpp.o.d"
   "/home/danielrmv/home/danielrmv/projects/RobotControlSystem/src/MotorController.cpp" "CMakeFiles/RobotControlSystem.dir/src/MotorController.cpp.o" "gcc" "CMakeFiles/RobotControlSystem.dir/src/MotorController.cpp.o.d"
   "/home/danielrmv/home/danielrmv/projects/RobotControlSystem/src/NavigationSystem.cpp" "CMakeFiles/RobotControlSystem.dir/src/NavigationSystem.cpp.o" "gcc" "CMakeFiles/RobotControlSystem.dir/src/NavigationSystem.cpp.o.d"

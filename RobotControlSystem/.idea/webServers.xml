@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="88b8afdf-e1c7-4809-8eee-29d0ef634d3f" name="Raspi">
+        <fileTransfer rootFolder="/home/danielrmv" accessType="SFTP" host="192.168.1.145" port="22" sshConfigId="36992a73-b981-4a4f-a07d-ddaad6cbdbbd" sshConfig="danielrmv@192.168.1.145:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
