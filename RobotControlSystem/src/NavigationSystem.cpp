@@ -21,13 +21,13 @@ void NavigationSystem::navigateForward(int durationMs) {
     int iterations = durationMs / 10;
 
     for (int i = 0; i < iterations; i++) {
-        if (i % 2 == 0) {
-            motorController.setSpeed(-10, 10, 10, -10); // Standardgeschwindigkeit
-        } else {
-            motorController.setSpeed(-10, 10, 10, -11); // Leichte Korrektur
-        }
-        usleep(10000); // Warte 10ms
-    }
+        if (i % 14 == 0) { //                                                                                  ↑  ↑
+            motorController.setSpeed(-15, 15, 15, -20); // Leichte Korrektur                    L    M2  ⎜━━⎜‾‾‾‾‾‾‾‾⎜━━⎜  M4   R
+        } else { //                                                                             I           ⎜        ⎜          E
+            motorController.setSpeed(-15, 15, 15, -15); // Standardgeschwindigkeit              N           ⎜        ⎜          C
+        } //                                                                                    K           ⎜        ⎜          H
+        usleep(10000); // Warte 10ms                                                    S    M1  ⎜━━⎜⎽⎽⎽⎽⎽⎽⎽⎽⎜━━⎜  M3   T
+    } //                                                                                                       ↑  ↑             S
 
     motorController.stopAll(); // Stoppe die Motoren nach Abschluss
     cout << "NavigationSystem: Geradeaus fahren beendet." << endl;
@@ -40,10 +40,10 @@ void NavigationSystem::navigateBackward(int durationMs) {
     int iterations = durationMs / 10;
 
     for (int i = 0; i < iterations; i++) {
-        if (i % 2 == 0) {
-            motorController.setSpeed(10, -10, -10, 10); // Standardgeschwindigkeit rückwärts
+        if (i % 27 == 0) {
+            motorController.setSpeed(15, -15, -16, 15); // Leichte Korrektur
         } else {
-            motorController.setSpeed(10, -10, -10, 9); // Leichte Korrektur
+            motorController.setSpeed(15, -15, -15, 15); // Standardgeschwindigkeit rückwärts
         }
         usleep(10000);
     }
@@ -56,10 +56,11 @@ void NavigationSystem::navigateBackward(int durationMs) {
 void NavigationSystem::turnRight(int degrees) {
     cout << "NavigationSystem: Starte rechts Drehung..." << endl;
 
-    int iterations = degrees * 29; // Beispiel: Iterationen für 1 Grad = 29
+    int iterations = degrees * 30; // Iterationen für 1 Grad = 30
 
     for (int i = 0; i < iterations; i++) {
         motorController.setSpeed(-10, 10, -10, 10); // Drehgeschwindigkeit
+        usleep(2125);
     }
 
     motorController.stopAll();
@@ -70,10 +71,11 @@ void NavigationSystem::turnRight(int degrees) {
 void NavigationSystem::turnLeft(int degrees) {
     cout << "NavigationSystem: Starte links Drehung..." << endl;
 
-    int iterations = degrees * 29;
+    int iterations = degrees * 30; // Iterationen für 1 Grad = 30
 
     for (int i = 0; i < iterations; i++) {
         motorController.setSpeed(10, -10, 10, -10);
+        usleep(2125);
     }
 
     motorController.stopAll();

@@ -7,6 +7,7 @@
 #ifndef ROBOTSYSTEM_H
 #define ROBOTSYSTEM_H
 
+#include "MotorController.h"
 #include "NavigationSystem.h"
 
 // Die RobotSystem-Klasse verwaltet das gesamte Robotersystem

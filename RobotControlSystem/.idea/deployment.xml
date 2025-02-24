@@ -5,8 +5,18 @@
       <paths name="Raspi">
         <serverdata>
           <mappings>
-            <mapping deploy="/home/danielrmv/projects/RobotControlSystem/cmake-build-raspi" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/home/danielrmv/projects/RobotControlSystem/build" local="$PROJECT_DIR$" web="/" />
           </mappings>
+        </serverdata>
+      </paths>
+      <paths name="Raspi (29b37832-4525-48dc-babe-1dea0c5ed478)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/RobotControlSystem" local="$PROJECT_DIR$" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/home/danielrmv/RobotControlSystem/cmake-build-raspi" />
+          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>
